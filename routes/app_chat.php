@@ -17,10 +17,10 @@ error_reporting(E_ALL);
 use Gemini\Enums\Role;
 use Gemini\Data\Content;
 
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 try {
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/');
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
     $dotenv->load();
 
     $json = file_get_contents('php://input');
@@ -45,7 +45,7 @@ try {
     $apiKey = $_ENV['GEMINI_API_KEY'];
     $client = Gemini::client($apiKey);
 
-    $Context = file_get_contents(__DIR__ . '/context.txt');
+    $Context = file_get_contents(__DIR__ . '/../assets/res/context.txt');
 
     $model = $client->generativeModel(
         model: 'gemini-2.5-flash'

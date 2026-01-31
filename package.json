@@ -23,7 +23,8 @@
     "update-browserslist-db": "^1.2.3"
   },
   "scripts": {
-    "dev": "npm install &&php -S localhost:8000"
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css",
+    "dev": "npm install && composer install && npm run build:css && php -S localhost:8000 route.php"
   },
   "keywords": [],
   "author": "",

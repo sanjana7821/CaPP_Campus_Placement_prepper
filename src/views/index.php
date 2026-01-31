@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="/output.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body class="bg-black">
@@ -35,7 +35,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="scripts.js" defer></script>    
+    <script src="/js/scripts.js" defer></script>    
 
 </body>
 
